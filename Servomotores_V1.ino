@@ -103,7 +103,6 @@ void Servo_control_2(uint16_t pi1, uint16_t pf1, uint16_t pi2,uint16_t pf2, unsi
               Speed = map(val, 0, 1023, 10, 50);
               Serial.println(Speed);
        }
-    break;
   }
   
   else if (pi2<pf2 && abs(pf1-pi1)<=abs(pf2-pi2)){//----------------------------------------arriba-mayor2        
@@ -118,8 +117,6 @@ void Servo_control_2(uint16_t pi1, uint16_t pf1, uint16_t pi2,uint16_t pf2, unsi
               Speed = map(val, 0, 1023, 10, 50);
               Serial.println(Speed);
        }
-
-       break;
   }
 
   else if (pi1>pf1 && abs(pf1-pi1)>=abs(pf2-pi2)){//-----------------------------------------abajo-mayor1
@@ -134,8 +131,6 @@ void Servo_control_2(uint16_t pi1, uint16_t pf1, uint16_t pi2,uint16_t pf2, unsi
                 Speed = map(val, 0, 1023, 10, 50);
                 Serial.println(Speed);
           }
-
-      break;
    }
     
   
@@ -152,7 +147,6 @@ void Servo_control_2(uint16_t pi1, uint16_t pf1, uint16_t pi2,uint16_t pf2, unsi
               Serial.println(Speed);
               
        }
-      break;
   }
 }
 
